@@ -72,7 +72,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
           SliverPadding(
-            padding: const EdgeInsets.only(bottom: 20),
+            padding: EdgeInsets.only(bottom: 20),
             sliver: SliverToBoxAdapter(
               child: ContentList(
                 title: 'Trending',
@@ -85,7 +85,7 @@ class _HomeScreenState extends State<HomeScreen> {
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.grey[850],
         child: const Icon(Icons.cast),
-        onPressed: () => print('cast'),
+        onPressed: () => {},
       ),
     );
   }
