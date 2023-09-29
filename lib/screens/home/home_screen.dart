@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:netflix_clone/data/data.dart';
 import 'package:netflix_clone/widgets/appbar/custom_app_bar.dart';
 
+import '../../widgets/content/content_list.dart';
 import '../../widgets/header/content_header.dart';
 import '../../widgets/previews/previews.dart';
 
@@ -54,6 +55,28 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Previews(
                 title: 'Previews',
                 contentList: previews,
+              ),
+            ),
+          ),
+          SliverToBoxAdapter(
+            child: ContentList(
+              title: 'My List',
+              contentList: myList,
+            ),
+          ),
+          SliverToBoxAdapter(
+            child: ContentList(
+              title: 'Netflix Originals',
+              contentList: originals,
+              isOriginal: true,
+            ),
+          ),
+          SliverPadding(
+            padding: const EdgeInsets.only(bottom: 20),
+            sliver: SliverToBoxAdapter(
+              child: ContentList(
+                title: 'Trending',
+                contentList: trending,
               ),
             ),
           ),

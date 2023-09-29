@@ -101,7 +101,7 @@ const List<Content> originals = [
   Content(name: 'The End of the F***ing World', imageUrl: Assets.teotfw),
 ];
 
-final List<Content> trending = const [
+const List<Content> trending = [
   Content(name: 'Explained', imageUrl: Assets.explained),
   Content(name: 'Avatar The Last Airbender', imageUrl: Assets.atla),
   Content(name: 'Tiger King', imageUrl: Assets.tigerKing),
